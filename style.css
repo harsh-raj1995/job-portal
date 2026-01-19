@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+.nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e9ecef;
+    display: flex;
+
+}
+.a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.a:hover{
+    color: #007bff;
+}
+.main{
+    padding: 20px;
+    background-color: #ffffff;
+}
+.footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
