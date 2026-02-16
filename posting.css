@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+
+.form1{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form1 h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    position: fixed;
+    color: #fff9f9;
+    background-color: #ff8585;
+    width: 100%;
+}
+.form1 label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form1 input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    padding-left: 10px;
+}
+.form1 textarea{
+    width: 70%;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    font-size: 16px;
+    resize: none;
+}
+.form1 button{
+    background-color: #e2e6ea;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ol{
+    list-style-type: none;
+    padding-left: 20px;
+}
+ol li{
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: #ff8585;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff9f9;
+    width: 25%;
+
+}
+ol li:hover{
+    scale: 1.05;
+    transition: all 0.3s ease;
+}
+
+ol li h2{
+    margin-bottom: 5px;
+    font: Arial, sans-serif;
+}
+ol li p{
+    margin-top: 0;
+    font: Arial, sans-serif;
+}
+
+ol li button{
+    margin: 5px;
+    background-color: #e2e6ea;
+    color: #ff8585;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+ol li button:hover{
+    background-color: #ffb7b7;
+    color: #fff9f9;
+}
+ol li form{
+    display: inline;
+    justify-items: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="posting.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <form id="jobPostingForm" class="form1">
+            <h1 >Job Posting Page<br><br></h1><br><br>
+            <section style="padding-top: 10%;">
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required><br><br>
+
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required><br><br>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+
+            <label for="description">Job Description:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="range">Salary Range:</label>
+            <input type="text" id="range" name="range" required><br><br>
+
+            <button id="submitBtn" type="button">Post Job</button>
+            </section>
+        </form>
+    </section>
+        <ol id="ol">
+            
+        </ol>
+    <script src="posting.js"></script>
+</body>
+</html>
