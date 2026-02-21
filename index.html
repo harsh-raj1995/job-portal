@@ -9,15 +9,12 @@
 <body>
     <header class="header">
         <div>
-            <h1 style="font-size: 50px;">JOB PORTAL</h1>
+            <h1 style="font-size: 25px;">JOB PORTAL</h1>
         </div>
-        <div>
-            <img src="logo.png" alt="Job Portal Logo" width="20%">
+        <div style="display: flex; gap: 10px; float: left;">
+                <button type="button" class="btn">Login</button> 
+                <button type="button" class="btn">Register</button>
         </div>
-        <form>
-            <button type="button" class="btn">Login</button> 
-            <button type="button" class="btn">Register</button>
-        <form>
     </header>
 
     <nav class="nav">
@@ -25,7 +22,7 @@
         <div ><a href="jobs.html" class="a">COMPANIES </a></div>
         <div ><a href="about.html" class="a">SERVICES </a></div>
         <form class="search-form">
-                <input type="text" placeholder=" Search Jobs......   " style="width: 50%; height: 30px; border-radius: 20px; border: 1px solid #ccc; padding: 5px;">
+                <input type="text" placeholder=" Search Jobs......   " style="width: 50%; height: 30px; border-radius: 20px; border: 1px solid #ccc; padding: 5px;" class="search-input">
                 <button type="submit" class="search-btn">Search</button>
 
         </form>
@@ -38,34 +35,55 @@
     </nav>
 
     <main class="main">
+        <p class="src"></p>
         <div class="hero">
         <h2>Welcome to the Job Portal</h2>
         <p>Your gateway to exciting career opportunities.</p>
         </div>
-
+        <br><br><br>
         <section>
-            <h3>Featured Jobs</h3>
-            <ul>
-                <li>Software Engineer – TechCorp</li>
-                <li>Data Analyst – Insight Solutions</li>
-                <li>Marketing Executive – BrightFuture Ltd.</li>
+            <h3 class="fJobs">Featured Jobs</h3>
+            <br><br><br>
+            <ul class="job-list">
+                <li><br><br>Software Engineer – TechCorp
+                    <br><p>Location: Remote <br> Salary: $80,000 - $120,000<br> Experience: 2+ years</p>
+                </li>
+                <li><br><br>Data Analyst – Insight Solutions
+                    <br><p>Location: New York, NY <br> Salary: $60,000 - $90,000<br> Experience: 1+ years</p>   
+                <li><br><br>Marketing Executive – BrightFuture Ltd.
+                    <br><p>Location: San Francisco, CA <br> Salary: $50,000 - $70,000<br> Experience: 3+ years</p>
             </ul>
+            <br><br><br>
         </section>
-
-        <section>
-            <h3>Top Companies Hiring</h3>
+        <br><br><br><hr><br><br><br>
+        <section class="topC">
+            <h3 >Top Companies Hiring</h3>
+            <br>
             <p>Explore opportunities from leading organizations across industries:</p>
-            <ul>
-                <li>Google</li>
-                <li>Amazon</li>
-                <li>Infosys</li>
-                <li>Tata Consultancy Services</li>
+            <br><br><br>
+            <ul class="company-list">
+                <li><img src="https://freelogopng.com/images/all_img/1657952440google-logo-png-transparent.png" alt="GOOGLE"></li>
+                <li><img src="https://pngimg.com/uploads/amazon/amazon_PNG5.png" alt="AMAZON"></li>
+                <li><img src="https://tse1.mm.bing.net/th/id/OIP.lJlvWHVuWidFXMOcJn7GVgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="INFOSYS"></li>
+                <li><img src="https://pharmabharat.com/wp-content/uploads/2024/10/tcs.ns-7401f1bd-768x483.png" alt="TCS"></li>
+                <li><img src="https://www.pngall.com/wp-content/uploads/4/N-Netflix-Logo.png" alt="NETFLIX"></li>
+                <li><img src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_512px.png" alt="MICROSOFT"></li>
+                <li><img src="https://tse3.mm.bing.net/th/id/OIP.7MtcjoWQ-SgR1bTmLmW3aAHaJM?rs=1&pid=ImgDetMain&o=7&rm=3" alt="APPLE"></li>
+                <li><img src="https://www.pngmart.com/files/23/Ibm-Logo-PNG-Clipart.png" alt="IBM"></li>
+                <li><img src="https://www.pngmart.com/files/23/Adobe-Logo-Transparent-PNG.png" alt="ADOBE"></li>
+                <li><img src="https://cdn.pixabay.com/photo/2021/11/01/15/20/meta-logo-6760788_960_720.png" alt="META"></li>
             </ul>
+            <br><br><br><br><br><br>
+            <hr><br><br><br>
         </section>
 
-        <section>
-            <h3>Our Services</h3>
-            <p>We provide career guidance, resume building, and interview preparation to help you succeed.</p>
+        <section class="Services">
+            <h3 >Our Services</h3>
+            <ol><br><br><br>
+                <li>Career Guidance</li>
+                <li>Resume Building</li>
+                <li>Interview Preparation</li>
+            </ol>
         </section>
     </main>
 
@@ -73,5 +91,6 @@
         <p>&copy; 2026 Job Portal. All rights reserved.</p>
         <p>Contact us: support@jobportal.com | +91-*********</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
