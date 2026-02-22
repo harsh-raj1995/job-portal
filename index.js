@@ -8,6 +8,6 @@ btn.addEventListener("click",(event)=>{
     return;
   }
   let i=input.value.toLowerCase();
-    s.innerHTML='<p class="src">You searched for: '+i+'</p><p class="src">Sorry, no results found for "'+i+'". </p><p class="src">Please try again with different keywords.</p><br><br>';
+    s.innerHTML='<p class="src">You searched for: "'+i+'"</p><p class="src">Sorry, no results found for "'+i+'". </p><p class="src">Please try again with different keywords.</p><br>';
     input.value="";
 })
