@@ -7,6 +7,130 @@ html,body{
     height: 100%;
     width: 100%;
     background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 8px;
+
+    height: 100vh;   
+}
+.div1 {
+    grid-column: span 5 / span 5;
+    grid-row: span 1 / span 1;
+    background-color: black;
+    color: #fff9f9;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 40px;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+    font: Arial;
+    margin-left: 30px;
+    margin-top: 20px;;
+}
+#search-input{
+    margin-top: 1%;
+    width: 50%;
+    border-radius: 12px;    
+    font-size: 16px;
+    resize: none;
+    font: Arial, sans-serif;
+    padding: 1%;
+}
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 7 / span 7;
+    grid-column-start: 6;
+    background-color: #E2E6EA;
+    color: #343A40;
+    width: 350px;
+}
+#jobForm {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+#jobForm label {
+  font-weight: 600;
+}
+
+#jobForm input,
+#jobForm textarea {
+    margin-left: 8%;
+  width: 70%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#jobForm textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+#jobForm button {
+  width: 120px;
+  padding: 8px;
+  border: none;
+  border-radius: 16px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+}
+#jobForm button:hover {
+  background: #333;
+  translate: 0 -2px;
+}
+
+.div3 {
+    grid-column: span 5;
+    grid-row: span 5;
+    grid-row-start: 2;
+
+    overflow-y: auto;  
+}
+h2{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.card{
+    margin: 30px;
+    padding: 20px;
+    background-color: #E2E6EA;
+    color:#141E26;
+    border-radius: 8px;
+    padding: 20px;
+} 
+.card:hover{
+    scale: 1.02;
+    transition: all 0.2s ease;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f9fa;
 }
 
 
@@ -114,4 +238,4 @@ ol li button:hover{
 ol li form{
     display: inline;
     justify-items: center;
-}
+} */
