@@ -90,10 +90,10 @@ const container = document.getElementById("jobCardsContainer");
 const form = document.getElementById("jobForm");
 
 
-function displayJobs() {
+function displayJobs(job) {
   container.innerHTML = "";
 
-  jobs.reverse().forEach((job) => {
+  job.reverse().forEach((job) => {
     const card = document.createElement("div");
 
     card.innerHTML = `<div class="card">
@@ -127,35 +127,45 @@ form.addEventListener("submit", function(e) {
 });
 let searchInput = document.getElementById("search-input");
 
-searchInput.addEventListener("input", function(e) {
+searchInput.addEventListener("input",function (e){
   const value = e.target.value.toLowerCase();
-
-  const filteredJobs = jobs.filter(job =>
+  let f=jobs.filter(job =>
     job.title.toLowerCase().includes(value) ||
     job.company.toLowerCase().includes(value) ||
     job.location.toLowerCase().includes(value)
   );
-
-  displayFilteredJobs(filteredJobs);
+  displayJobs(f);
 });
 
-function displayFilteredJobs(filteredJobs) {
-  container.innerHTML = "";
+// searchInput.addEventListener("input", function(e) {
+//   const value = e.target.value.toLowerCase();
 
-  filteredJobs.slice().reverse().forEach((job) => {
-    const card = document.createElement("div");
+//   const filteredJobs = jobs.filter(job =>
+//     job.title.toLowerCase().includes(value) ||
+//     job.company.toLowerCase().includes(value) ||
+//     job.location.toLowerCase().includes(value)
+//   );
 
-    card.innerHTML = `<div class="card">
-      <h3>${job.title}</h3>
-      <p><strong>Company:</strong> ${job.company}</p>
-      <p><strong>Location:</strong> ${job.location}</p>
-      <p>${job.description}</p>
-      <p><strong>Salary:</strong> ${job.salary}</p>
-      </div>
-    `;
+//   displayFilteredJobs(filteredJobs);
+// });
 
-    container.appendChild(card);
-  });
-}
+// function displayFilteredJobs(filteredJobs) {
+//   container.innerHTML = "";
 
-displayJobs();
+//   filteredJobs.slice().reverse().forEach((job) => {
+//     const card = document.createElement("div");
+
+//     card.innerHTML = `<div class="card">
+//       <h3>${job.title}</h3>
+//       <p><strong>Company:</strong> ${job.company}</p>
+//       <p><strong>Location:</strong> ${job.location}</p>
+//       <p>${job.description}</p>
+//       <p><strong>Salary:</strong> ${job.salary}</p>
+//       </div>
+//     `;
+
+//     container.appendChild(card);
+//   });
+// }
+
+displayJobs(jobs);
